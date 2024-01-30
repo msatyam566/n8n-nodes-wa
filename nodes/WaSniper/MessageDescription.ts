@@ -77,32 +77,6 @@ export const messageOperations: INodeProperties[] = [
 	},
 ];
 
-
-// 	{
-// 		displayName: 'Dynamic Params',
-// 		name: 'dynamicQueryParams',
-// 		type: 'collection',
-// 		default: {},
-
-// 		options: [
-// 			{
-// 				displayName: 'Access Token',
-// 				name: 'accessToken',
-// 				type: 'string',
-// 				default: '',
-// 				description: 'Enter access token',
-// 			},
-// 			{
-// 				displayName: 'Instance ID',
-// 				name: 'instanceId',
-// 				type: 'string',
-// 				default: '',
-// 				description: 'Enter instance ID',
-// 			},
-// 		],
-// 	},
-// ];
-
 const postOperation: INodeProperties[] = [
 	{
 		displayName: 'Type of Data',

@@ -17,12 +17,6 @@ export class WaSniper implements INodeType {
 		},
 		inputs: ['main'],
 		outputs: ['main'],
-		credentials: [
-			{
-				name: 'wasniperApi',
-				required: false,
-			},
-		],
 		requestDefaults: {
 			baseURL: `https://dash.wasniper.com/api/`,
 
@@ -30,11 +24,6 @@ export class WaSniper implements INodeType {
 				Accept: 'application/json',
 				'Content-Type': 'application/json',
 			},
-			body:{
-
-			}
-
-
 		},
 
 
