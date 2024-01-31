@@ -1,6 +1,5 @@
 import { INodeProperties } from 'n8n-workflow';
 
-// When the resource `wasniper` is selected, this `operation` parameter will be shown.
 
 export const messageOperations: INodeProperties[] = [
 	{

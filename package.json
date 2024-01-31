@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/msatyam566/n8n-nodes-wa.git"
   },
   "main": "index.js",
   "scripts": {
@@ -34,9 +34,11 @@
     ],
     "nodes": [
       "dist/nodes/WaSniper/WaSniper.node.js",
+      "dist/nodes/Indiamart/Indiamart.node.js",
       "dist/nodes/Magicbricks/Magicbricks.node.js",
       "dist/nodes/Justdial/Justdial.node.js",
       "dist/nodes/nintynineacres/nintynineacres.node.js"
+
     ]
   },
   "devDependencies": {
