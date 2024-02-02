@@ -36,8 +36,9 @@ import {
 export class Magicbricks implements INodeType {
 	authPropertyName = 'authentication';
 	description: INodeTypeDescription = {
-		displayName: 'Magic Bricks',
+		displayName: 'MagicBricks',
 		name: 'Magicbricks',
+		icon:'file:magicbricks.svg',
 		group: ['trigger'],
 		version: [1, 1.1],
 		description: 'Starts the workflow when a webhook is called',

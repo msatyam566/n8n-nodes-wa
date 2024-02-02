@@ -39,6 +39,7 @@ export class Nintynineacres implements INodeType {
 		displayName: '99 acres',
 		name: 'Nintynineacres',
 		group: ['trigger'],
+		icon:'file:nintynineacres.svg',
 		version: [1, 1.1],
 		description: 'Starts the workflow when a webhook is called',
 		eventTriggerDescription: 'Waiting for you to call the Test URL',

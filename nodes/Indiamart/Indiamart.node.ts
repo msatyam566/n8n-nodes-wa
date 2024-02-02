@@ -1,10 +1,11 @@
-import { INodeType, INodeTypeDescription } from 'n8n-workflow';
-import { fetchCrmOperations,crmfields } from './IndiamartDescription';
+import {  INodeType, INodeTypeDescription } from 'n8n-workflow';
+import { fetchCrmOperations, crmfields } from './IndiamartDescription';
 
 export class Indiamart implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'India mart',
 		name: 'Indiamart',
+		icon:'file:indiamart-logo.svg',
 		group: ['output'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
@@ -24,6 +25,7 @@ export class Indiamart implements INodeType {
 			},
 		},
 
+
 		properties: [
 			{
 				displayName: 'Resource',
@@ -40,7 +42,10 @@ export class Indiamart implements INodeType {
 			},
 
 			...fetchCrmOperations,
-			... crmfields
+			...crmfields,
 		],
 	};
+
+
+
 }

@@ -39,6 +39,7 @@ export class Justdial implements INodeType {
 		displayName: 'Just Dial',
 		name: 'Justdial',
 		group: ['trigger'],
+		icon:'file:justdial.svg',
 		version: [1, 1.1],
 		description: 'Starts the workflow when a webhook is called',
 		eventTriggerDescription: 'Waiting for you to call the Test URL',

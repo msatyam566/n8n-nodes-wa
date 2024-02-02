@@ -6,14 +6,15 @@ import { groupDescription,groupMessageFields } from './GroupMessageDescription';
 
 export class WaSniper implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Wa Sniper',
+		displayName: 'WA Sniper',
 		name: 'WaSniper',
 		group: ['output'],
+		icon:'file:WASNIPER.svg',
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'Interact with WA Sniper API',
 		defaults: {
-			name: 'Wa Sniper',
+			name: 'WA Sniper',
 		},
 		inputs: ['main'],
 		outputs: ['main'],
