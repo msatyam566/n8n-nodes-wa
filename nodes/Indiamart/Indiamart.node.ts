@@ -1,19 +1,24 @@
-import {  INodeType, INodeTypeDescription } from 'n8n-workflow';
+import {
+	INodeType,
+	INodeTypeDescription,
+} from 'n8n-workflow';
 import { fetchCrmOperations, crmfields } from './IndiamartDescription';
+// import { name } from './Indiamartfunction';
 
 export class Indiamart implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'India mart',
+		displayName: 'IndiaMart',
 		name: 'Indiamart',
-		icon:'file:indiamart-logo.svg',
+		icon: 'file:indiamart-logo.svg',
 		group: ['output'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + ": " + $parameter["resource"]}}',
 		description: 'You are interacting to India mart ',
 		defaults: {
-			name: 'India mart',
+			name: 'Indiamart',
 		},
 		inputs: ['main'],
+
 		outputs: ['main'],
 
 		requestDefaults: {
@@ -24,7 +29,6 @@ export class Indiamart implements INodeType {
 				'Content-Type': 'application/json',
 			},
 		},
-
 
 		properties: [
 			{
@@ -44,8 +48,15 @@ export class Indiamart implements INodeType {
 			...fetchCrmOperations,
 			...crmfields,
 		],
+
 	};
 
-
+  // async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
+  //   const baseURL = 'https://mapi.indiamart.com/wservce/crm/crmListing/v2';
+  //     return name.call(this, `${baseURL}`);
+  // }
 
 }
+
+
+

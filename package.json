@@ -37,8 +37,8 @@
       "dist/nodes/Indiamart/Indiamart.node.js",
       "dist/nodes/Magicbricks/Magicbricks.node.js",
       "dist/nodes/Justdial/Justdial.node.js",
-      "dist/nodes/nintynineacres/nintynineacres.node.js"
-
+      "dist/nodes/nintynineacres/nintynineacres.node.js",
+      "dist/nodes/Validate/ValidateNumber.node.js"
     ]
   },
   "devDependencies": {
@@ -56,6 +56,7 @@
   "dependencies": {
     "isbot": "^4.4.0",
     "jest-mock-extended": "^3.0.5",
+    "n8n-node-dev": "^0.100.0",
     "node-red-node-test-helper": "^0.3.3",
     "node-test": "^1.4.6"
   }
