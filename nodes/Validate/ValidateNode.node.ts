@@ -28,7 +28,7 @@ export class ValidateNode implements INodeType {
 			if (item.json && item.json.RESPONSE && Array.isArray(item.json.RESPONSE)) {
 				item.json.RESPONSE.forEach((response: any) => {
 					if (response && typeof response === 'object' && response.SENDER_MOBILE) {
-						response.SENDER_MOBILE = response.SENDER_MOBILE.replace(/-/g, '');
+						response.SENDER_MOBILE = response.SENDER_MOBILE.replace(/[+-]/g, '');
 					}
 				});
 			}
